@@ -3,7 +3,7 @@
 <title>Static Call Graph - [final_Assignment\final_Assignment.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image final_Assignment\final_Assignment.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Mon Mar 30 23:42:02 2020
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Wed Apr 01 03:44:41 2020
 <BR><P>
 <H3>Maximum Stack Usage =        192 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -473,7 +473,7 @@ Global Symbols
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f411xe.o(RESET)
 </UL>
 <P><STRONG><a name="[2d]"></a>EXTI15_10_IRQHandler</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, main.o(i.EXTI15_10_IRQHandler))
-<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = EXTI15_10_IRQHandler &rArr; autoMode &rArr; HAL_Delay
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = EXTI15_10_IRQHandler &rArr; autoMode &rArr; HAL_Delay
 </UL>
 <BR>[Calls]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_ReadPin
 <LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_EXTI_IRQHandler
@@ -961,8 +961,8 @@ Global Symbols
 
 <P><STRONG><a name="[ba]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
 
-<P><STRONG><a name="[5d]"></a>autoMode</STRONG> (Thumb, 112 bytes, Stack size 24 bytes, main.o(i.autoMode))
-<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = autoMode &rArr; HAL_Delay
+<P><STRONG><a name="[5d]"></a>autoMode</STRONG> (Thumb, 126 bytes, Stack size 32 bytes, main.o(i.autoMode))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = autoMode &rArr; HAL_Delay
 </UL>
 <BR>[Calls]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
 <LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Delay

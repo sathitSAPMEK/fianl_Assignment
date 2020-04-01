@@ -115,24 +115,30 @@ void autoMode(){
 		HAL_GPIO_WritePin(GPIOA,GPIO_PIN_7,1);
 		HAL_GPIO_WritePin(GPIOA,GPIO_PIN_6,0);
 		
-		
-		htim2.Instance->CCR1 = 400;
+		//Base
+		htim2.Instance->CCR1 = 210;
 		HAL_Delay(2000);
+	
 		
+		
+		//Head
 		htim3.Instance->CCR4 = 300;
 		HAL_Delay(2000);
 		
-		htim3.Instance->CCR4 = 200;
+		htim3.Instance->CCR4 = 150;
 		HAL_Delay(2000);
 		
+		//Base
 		htim2.Instance->CCR1 = 60;
 		HAL_Delay(2000);
 		
+		//Head
 		htim3.Instance->CCR4 = 300;
 		HAL_Delay(2000);
 		
-		htim3.Instance->CCR4 = 400;
-		HAL_Delay(500);
+		htim3.Instance->CCR4 = 150;
+		HAL_Delay(2000);
+		
 		
 }
 
@@ -245,7 +251,7 @@ int main(void)
 			
 		}else{
 			
-			htim3.Instance->CCR4 = 200;			
+			htim3.Instance->CCR4 = 150;			
 		}
 		
 		/*------------------------------LED-----------------------------------*/
